@@ -23,27 +23,25 @@ public class ChatFragment extends Fragment {
         // Required empty public constructor
     }
 
-    private List<Chatlist> list = new ArrayList<>();
-    private RecyclerView recyclerView;
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_chat, container, false);
-
-        recyclerView = view.findViewById(R.id.recyclerview);
+        List<Chatlist> list = new ArrayList<>();
+        RecyclerView  recyclerView = view.findViewById(R.id.recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        getChatlist();
-
-        return view;
-    }
-
-    private void getChatlist() {
         list.add(new Chatlist("11","FaZe Rug","Hello friend","17/11/2020","https://pbs.twimg.com/profile_images/1289246810553245696/_FoKWUVJ_400x400.jpg"));
         list.add(new Chatlist("22","Mr.Beast","Hi","17/11/2020","https://influencermatchmaker.co.uk/sites/default/files/2019-12/mrbeast.JPG"));
         list.add(new Chatlist("33","frenchie fries","Hey","17/11/2020","https://yt3.ggpht.com/a/AATXAJzpGZvz0g0qJaBNkQeIMK-OSQW1xsEX60L7viM0=s900-c-k-c0x00ffffff-no-rj"));
         list.add(new Chatlist("44","ZHC","Whatsup dude","17/11/2020","https://bookingagentinfo.com/wp-content/uploads/2020/04/Zach-ZHC-Hsieh-Contact-Information.jpg"));
 
         recyclerView.setAdapter(new ChatListAdapter(list,getContext()));
+
+
+        return view;
     }
+
 }

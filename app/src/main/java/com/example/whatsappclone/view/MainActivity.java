@@ -1,4 +1,4 @@
-package com.example.whatsappclone;
+package com.example.whatsappclone.view;
 
 
 import androidx.annotation.NonNull;
@@ -16,6 +16,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.whatsappclone.R;
 import com.example.whatsappclone.databinding.ActivityMainBinding;
 import com.example.whatsappclone.menu.CallsFragment;
 import com.example.whatsappclone.menu.ChatFragment;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = DataBindingUtil.setContentView(this,R.layout.activity_main);
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         setUpwithViewPager(binding.viewPager);
         binding.tablayout.setupWithViewPager(binding.viewPager);

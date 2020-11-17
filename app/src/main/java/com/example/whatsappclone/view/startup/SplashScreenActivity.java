@@ -1,10 +1,12 @@
-package com.example.whatsappclone;
+package com.example.whatsappclone.view.startup;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import com.example.whatsappclone.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -16,7 +18,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashScreenActivity.this,MainActivity.class));
+                startActivity(new Intent(SplashScreenActivity.this, WelcomeScreenActivity.class));
             }
         },3000);
     }

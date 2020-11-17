@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
+        android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -45,15 +45,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:visibility="visible"/>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentEnd="true">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_action"
-        android:src="@android:drawable/stat_notify_chat"
         android:tint="@color/colorAccent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="15dp"/>
+        android:layout_margin="15dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_baseline_chat_24"
+        app:tint="@android:color/white" />
+
+</LinearLayout>
+
+
     </RelativeLayout>
 </layout>
