@@ -1,6 +1,7 @@
 package com.example.whatsappclone;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
@@ -69,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
         public SectionsPagerAdapter(FragmentManager manager){super(manager);}
 
+        @NonNull
         @Override
         public Fragment getItem(int position){return mFragmentList.get(position);}
 
@@ -105,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
         binding.fabAction.hide();
 
         new Handler().postDelayed(new Runnable() {
+            @SuppressLint("UseCompatLoadingForDrawables")
             @Override
             public void run() {
                 switch (index) {
