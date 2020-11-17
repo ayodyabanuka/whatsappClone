@@ -26,17 +26,17 @@
 
     <TextView
         android:id="@+id/from"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/text1"
+        android:layout_width="51dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="264dp"
+        android:layout_marginTop="664dp"
         android:layout_marginEnd="186dp"
-        android:layout_marginBottom="47dp"
+        android:layout_marginBottom="42dp"
         android:text="From"
-        android:textColor="@android:color/black"
-        android:textSize="16sp" />
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
 
     <TextView
         android:id="@+id/facebook"
