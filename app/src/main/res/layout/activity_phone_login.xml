@@ -47,15 +47,13 @@
         android:gravity="center_horizontal"
         android:text="Whatsapp will send an messeage to verify your phone number.Whats's my number?"/>
 
-    <Spinner
-        android:id="@+id/spinner_country"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"/>
+
         
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal">
 
             <TextView
@@ -80,7 +78,7 @@
                 android:inputType="phone"
                 android:maxLength="13"
                 android:maxLines="1"
-                android:hint="phone nUmber"/>
+                android:hint="phone number"/>
 
 
         </LinearLayout>
@@ -93,6 +91,14 @@
             android:layout_marginTop="15dp"
             android:text="Carrie SMS change may apply"
             />
+        <EditText
+            android:id="@+id/ed_code"
+            android:layout_width="200dp"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:maxLength="6"
+            android:inputType="number"
+            android:hint="Enter Code"/>
     </LinearLayout>
 
 
